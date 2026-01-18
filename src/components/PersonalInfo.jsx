@@ -14,15 +14,15 @@ import {
 const PersonalInfo = () => {
   const personalDetails = [
     { icon: User, label: 'Full Name', value: 'P. Sreeja' },
-    { icon: Calendar, label: 'Date of Birth', value: 'DD/MM/YYYY' },
-    { icon: Users, label: "Father's Name", value: 'Father Name' },
+    { icon: Calendar, label: 'Date of Birth', value: '03/07/2006' },
+    { icon: Users, label: "Father's Name", value: 'P.Bhasker' },
     { icon: Smile, label: 'Gender', value: 'Female' },
     {
       icon: Smile,
       label: 'Hobbies',
       value: 'Reading, Coding, Data Visualization, Machine Learning Research',
     },
-    { icon: MapPin, label: 'Address', value: 'Your Address, City, State, Country' },
+    { icon: MapPin, label: 'Address', value: 'old gunj,vepuri geri,mahabubnagar,Telangana,India' },
     { icon: Phone, label: 'Phone', value: '+919550363968', isLink: true },
     { icon: Globe, label: 'Nationality', value: 'Indian' },
     { icon: Languages, label: 'Languages', value: 'English, Telugu, Hindi' },
