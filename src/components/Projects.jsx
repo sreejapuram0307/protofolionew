@@ -29,6 +29,46 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'ScholarSync – AI Powered Scholarship Recommendation Platform',
+      description:
+        'A platform designed to recommend scholarships to students based on their academic profile, interests, and eligibility. It includes a career roadmap system that guides students through future academic and professional paths, along with a community feature that allows students to collaborate and share opportunities.',
+      technologies: [
+        'React.js',
+        'JavaScript',
+        'Recommendation Logic',
+        'UI/UX Design',
+      ],
+      features: [
+        'AI-powered scholarship recommendations based on academic profile and interests',
+        'Career roadmap system for academic and professional guidance',
+        'Community feature for student collaboration and opportunity sharing',
+        'Personalized eligibility matching system',
+      ],
+      icon: TrendingUp,
+      hasChart: false,
+    },
+    {
+      title: 'SheRise – Women Entrepreneur Platform',
+      description:
+        'A professional platform connecting women entrepreneurs with investors and mentors to support startup ideas, funding, and mentorship. It includes role-based dashboards, idea submission, investment interaction, community discussions, and private chat functionality between entrepreneurs and investors.',
+      technologies: [
+        'React 18',
+        'Vite',
+        'Tailwind CSS',
+        'React Router',
+        'LocalStorage',
+      ],
+      features: [
+        'Role-based dashboards for entrepreneurs, investors, and mentors',
+        'Idea submission and investment interaction system',
+        'Community discussions and networking features',
+        'Private chat functionality between entrepreneurs and investors',
+        'Mentorship collaboration tools',
+      ],
+      icon: Heart,
+      hasChart: false,
+    },
+    {
       title: 'Stock Price Prediction Using LSTM',
       description:
         'A deep learning project that predicts stock prices using Long Short-Term Memory (LSTM) neural networks. The model analyzes historical stock data to forecast future prices with high accuracy.',

@@ -6,7 +6,21 @@ const Achievements = () => {
   const achievements = [
     {
       icon: Trophy,
-      title: 'Won 3rd Prize – CMR HackFest 3.0 (National Level)',
+      title: '1st Prize – National Level Innovation Hackathon',
+      description:
+        'Developed ScholarSync, an AI-powered scholarship recommendation platform that matches students with scholarships based on their academic profile and interests. The platform also includes a career pathway guidance system and a community feature for students to collaborate and share opportunities.',
+      year: '2024',
+    },
+    {
+      icon: Award,
+      title: '2nd Prize – KL University National Hackathon',
+      description:
+        'Built SheRise – Women Entrepreneur Platform, a role-based system connecting women entrepreneurs with investors and mentors. The platform enables idea sharing, investment support, mentorship collaboration, and community engagement.',
+      year: '2024',
+    },
+    {
+      icon: Trophy,
+      title: '3rd Prize – CMR HackFest 3.0 (National Level)',
       description:
         'Built a Smart Healthcare platform using ESP32, biomedical sensors, and AI-based health prediction for elderly care.',
       year: '2024',

@@ -27,13 +27,13 @@ const Contact = () => {
   const socialLinks = [
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/sreeja-puram',
+      href: 'https://www.linkedin.com/in/sreeja-puram-b807a92bb/',
       label: 'LinkedIn',
       color: 'from-blue-600 to-blue-700',
     },
     {
       icon: Github,
-      href: 'https://github.com/sreejapuram',
+      href: 'https://github.com/sreejapuram0307',
       label: 'GitHub',
       color: 'from-gray-800 to-gray-900',
     },
