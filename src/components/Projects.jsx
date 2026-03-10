@@ -10,7 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts'
-import { TrendingUp, Github, ExternalLink, Heart, Car, Shield } from 'lucide-react'
+import { TrendingUp, Github, ExternalLink, Heart, Car, Shield, Calendar } from 'lucide-react'
 
 const Projects = () => {
   // Sample stock price prediction data
@@ -28,6 +28,26 @@ const Projects = () => {
   ]
 
   const projects = [
+    {
+      title: 'AI Week Event Website – Krithomedha AIML Department',
+      description:
+        'As a member of the Technical Team at Krithomedha (AIML Department), I contributed to organizing AI Week, a week-long technical event focused on Artificial Intelligence and emerging technologies. Our team designed and developed a dedicated event website where students could explore event details, schedules, and register for activities conducted during the event.',
+      technologies: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'Responsive Design',
+      ],
+      features: [
+        'Displays event schedule and technical session details',
+        'Allows participants to register for events',
+        'Provides centralized information about the AI Week activities',
+        'Clean and responsive user interface for students',
+      ],
+      icon: Calendar,
+      hasChart: false,
+      liveUrl: 'https://ai-week.netlify.app/',
+    },
     {
       title: 'ScholarSync – AI Powered Scholarship Recommendation Platform',
       description:
@@ -197,23 +217,25 @@ const Projects = () => {
                       </div>
                       <div className="flex space-x-4">
                         <motion.a
-                          href="https://github.com/sreejapuram"
+                          href={project.liveUrl || "https://github.com/sreejapuram0307"}
                           target="_blank"
                           rel="noopener noreferrer"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
                           className="p-3 rounded-full bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
                         >
-                          <Github size={20} />
+                          {project.liveUrl ? <ExternalLink size={20} /> : <Github size={20} />}
                         </motion.a>
-                        <motion.a
-                          href="#"
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.9 }}
-                          className="p-3 rounded-full bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
-                        >
-                          <ExternalLink size={20} />
-                        </motion.a>
+                        {!project.liveUrl && (
+                          <motion.a
+                            href="#"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="p-3 rounded-full bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
+                          >
+                            <ExternalLink size={20} />
+                          </motion.a>
+                        )}
                       </div>
                     </div>
 
